@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>절대적 위치 지정하기</title>
+    <style>
+        img { border: 5px solid #8dc; }
+        div {
+            width: 500px;
+            height: 300px;
+            background: #ffe;
+            border: 1px solid #663;
+        }
+        .absolute-img {
+            position: absolute;
+            top: 50px;
+            left: 30px;
+        }
+        img:hover {
+            border: 5px solid #fff;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body> 
+    <div>
+        <img src="../media/font_h.png">
+        <img src="../media/font_t.png" class="absolute-img">
+        <img src="../media/font_m.png">
+        <img src="../media/font_l.png">    
+    </div>
+    <h3>.absolute-img: top 50px; left: 30px;</h3>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt()로 사용자 입력받기</title>
+    <link rel="stylesheet" href="style_js.css">
+</head>
+<body>
+    <script>
+        let coupon = parseInt(prompt("패키지 번호를 입력하세요"));
+        document.write("패키지: " + coupon + "번<hr>");
+        switch (coupon) {
+            case 1:
+                document.write("돌고래쇼 ");
+            case 2:
+                document.write("놀이기구 10종 ");
+            case 3:
+                document.write("입장권");
+        }
+    </script>
+</body>
+</html>

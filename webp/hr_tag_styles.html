@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 HR 스타일</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        hr.solid {
+            border: 2px solid black;
+        }
+        hr.dashed {
+            border: 2px dashed black;
+        }
+        hr.dotted {
+            border: 2px dotted black;
+        }
+        hr.double {
+            border: 4px double black;
+        }
+        hr.gradient {
+            height: 5px;
+            border: none;
+            background: linear-gradient(to right, red, blue);
+        }
+        hr.shadow {
+            border: none;
+            height: 5px;
+            box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.5);
+            background-color: gray;
+        }
+        hr.thick {
+            border: 5px solid black;
+        }
+        hr.text {
+            border: none;
+            height: 1px;
+            background: black;
+            position: relative;
+        }
+        hr.text::after {
+            content: "SECTION BREAK";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: red;
+            padding: 8px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Arial, sans-serif; 
+        }
+        hr.curved {
+            border: none;
+            height: 10px;
+            background: radial-gradient(circle, black, transparent);
+        }
+        hr.wavy {
+            border: none;
+            height: 5px;
+            background: repeating-linear-gradient(90deg, black, black 10px, white 10px, white 20px);
+        }
+        hr.animated {
+            border: none;
+            height: 5px;
+            background: linear-gradient(to right, red, blue);
+            background-size: 200% 100%;
+            animation: moveGradient 3s linear infinite;
+        }
+        @keyframes moveGradient {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        hr.faded {
+            border: none;
+            height: 5px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        }
+        hr.icon {
+            border: none;
+            height: 1px;
+            background: black;
+            position: relative;
+        }
+        hr.icon::after {
+            content: "★";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 5px 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>기본 수평선</p>
+    <hr>
+    
+    <p>단색 실선</p>
+    <hr class="solid">
+    
+    <p>점선</p>
+    <hr class="dashed">
+    
+    <p>점점이</p>
+    <hr class="dotted">
+    
+    <p>이중선</p>
+    <hr class="double">
+    
+    <p>그라디언트</p>
+    <hr class="gradient">
+    
+    <p>그림자 효과</p>
+    <hr class="shadow">
+    
+    <p>두꺼운 수평선</p>
+    <hr class="thick">
+    
+    <p>텍스트 포함</p>
+    <hr class="text">
+    
+    <p>커브형 수평선</p>
+    <hr class="curved">
+    
+    <p>물결 모양 수평선</p>
+    <hr class="wavy">
+    
+    <p>애니메이션 효과</p>
+    <hr class="animated">
+    
+    <p>흐려지는 효과</p>
+    <hr class="faded">
+    
+    <p>아이콘 포함</p>
+    <hr class="icon">
+</body>
+</html>

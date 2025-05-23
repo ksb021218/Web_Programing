@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크 및 폼 테스트</title>
+    <style>
+        a:link { color: red;}
+        a:visited { color: green;}
+        a:hover { background-color: #ff8;}
+
+         /* ul을 통한 커스텀 라디오와 체크박스 스타일 */
+         ul.custom-radio, ul.custom-checkbox {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul.custom-radio li, ul.custom-checkbox li {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            background-color: yellow; /* 기본 enabled 상태 */
+            user-select: none;
+        }
+        /* 선택된 상태 */
+        ul.custom-radio li.selected, ul.custom-checkbox li.selected {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>원하는 동물원의 홈페이지</p>
+    <a href="https://grandpark.seoul.go.kr">1. 서울대공원</a><br>
+    <a href="https://childrenpark.net">2. 어린이대공원</a><br>
+    <a href="https://www.everland.com">3. 에버랜드</a><br>
+    <br><br>
+
+    <!-- 커스텀 라디오 (단일 선택) -->
+  <p>원하는 동물원의 무료 입장권을 드립니다.(단일 선택)</p>
+  <ul class="custom-radio" id="radioGroup">
+    <li data-value="1">서울대공원</li>
+    <li data-value="2">어린이대공원</li>
+    <li data-value="3" class="selected">에버랜드</li>
+  </ul>
+  <br><br><br>
+
+  <!-- 커스텀 체크박스 (복수 선택) -->
+  <p>동물원에서 보고 싶은 동물을 고르세요.(복수 선택)</p>
+  <ul class="custom-checkbox" id="checkboxGroup">
+    <li data-value="1">판다 <img src="../media/panda2.png" height="120" alt="판다"></li>
+    <li data-value="2">하마 <img src="../media/hippo.png" height="120" alt="하마"></li>
+    <li data-value="3">라마 <img src="../media/lama2.png" height="120" alt="라마"></li>
+  </ul>
+</body>
+</html>

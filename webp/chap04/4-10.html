@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 선택자 사용하기</title>
+    <style>
+        p:hover { background-color: #ff8;}      /* <p>태그에 적용되는 가상 클래스 선택자 */
+     /* p: hover { background-color: #ff8:}       태그와 가상 클래스 사이 공백문자 있으면 오류 */
+        li::first-letter { color: red;}         /* 첫 문자 */
+        li:nth-child(2) { color: green;}        /* n 번째 자식(2번째), odd: 홀수, even: 짝수*/
+        li:nth-child(odd) { color: green;}
+        li:last-child { color: blue;}           /* 마지막 자식 */
+    </style>
+</head>
+<body>
+    <h2>바나나</h2>
+    <p><img src="../media/banana1.png" width="120"></p>
+    <ul>
+        <li>노란색의 아열대 과일</li>
+        <li>지방이 없어 체중 조절에 좋음</li>
+        <li>식이섬유가 풍부해 주식 대용으로 적당</li>
+        <li>노란색의 아열대 과일</li>
+        <li>지방이 없어 체중 조절에 좋음</li>
+        <li>식이섬유가 풍부해 주식 대용으로 적당</li>
+    </ul>
+    
+</body>
+</html>

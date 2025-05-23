@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>요소 하나에 접근하기</title>
+    <link rel="stylesheet" href="style_js.css">
+</head>
+<body style="text-align: center">
+    <img id="image" src="../media/photo1.jpg"><br>
+    <input type="button" value="Change" onclick="changeImage()" >
+    <script>
+        let toggle = 1;
+        function changeImage() {
+            if (++toggle % 2 == 0){
+                document.getElementById("image").src="../media/photo2.jpg";
+            }
+            else{
+                document.getElementById("image").src="../media/photo1.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
