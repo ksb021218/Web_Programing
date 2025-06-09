@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>회원가입</title>
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header data-include-path="./layout/header.html"></header>
+    <nav data-include-path="./layout/menu.html"></nav>
+
+    <main class="main_content">
+      <div class="content_placeholder">
+        <div class="signup_title">📝 회원가입</div>
+        <div class="signup_container">
+          <form class="signup_form" id="signupForm">
+            <input type="text" id="name" placeholder="이름을 입력하세요" required>
+            <input type="text" id="signupId" placeholder="아이디를 입력하세요" required>
+            <input type="password" id="signupPassword" placeholder="비밀번호를 입력하세요" required>
+            <input type="password" id="signupConfirm" placeholder="비밀번호를 다시 입력하세요" required>
+            <input type="email" id="email" placeholder="본인확인용 이메일 주소" required>
+            <input type="date" id="birthdate" required>
+
+            <div class="gender_group">
+              <label><input type="radio" name="gender" value="남자" required>&emsp;&ensp;&nbsp;남</label>
+              <label><input type="radio" name="gender" value="여자" required>&emsp;&ensp;&nbsp;여</label>
+            </div>
+
+            <input type="tel" id="phone" placeholder="ex) 010-0000-0000" required>
+            <button type="submit">회원가입</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer data-include-path="./layout/footer.html"></footer>
+  </div>
+
+  <script type="module" src="js/include.js"></script>
+  <script type="module" src="js/index.js"></script>
+  <script>
+    // 회원가입 안내 함수
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const password = document.getElementById('signupPassword').value;
+      const confirm = document.getElementById('signupConfirm').value;
+      if (password !== confirm) {
+        alert('비밀번호가 일치하지 않습니다.');
+        return;
+      }
+      alert('회원가입 되었습니다.');
+      window.location.href = './index.html';
+    });
+  </script>
+</body>
+</html>

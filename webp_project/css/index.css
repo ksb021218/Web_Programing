@@ -1,0 +1,262 @@
+/* 메인 내용 */
+.main_content {
+  background-color: #f3e9dc;
+}
+.content_placeholder {
+  background-color: #f3e9dc;
+  font-family: 'Nanum Gothic', sans-serif;
+  padding: 10px;
+  max-width: 1280px;
+}
+
+/* index CSS */
+.content_row {
+  display: flex;
+}
+article {
+  margin: 10px;
+}
+.left, .right {
+  width: 50%
+}
+.right {
+  display: flex;
+  flex-direction: column;
+}
+/* index의 표 CSS */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+/* 표 테두리 강조 */
+thead tr {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+tbody tr:last-child {
+  border-bottom: 2px solid #000;
+}
+/* 표 배경 색상 */
+th {
+  background-color: #ede0c8;
+}
+tbody tr {
+  background-color: #fcf9f3;
+}
+/* 표 맨 왼쪽/오른쪽 외곽선 제거 */
+th:first-child,
+td:first-child {
+  border-left: none;
+}
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
+/* 공지사항 CSS */
+.notice_title {
+  font-size: 48px;
+  text-align: center;
+  margin: 0 10px 10px;
+}
+.notice_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 28px;
+  margin: 20px 30px;
+  padding: 0;
+}
+.notice_q {
+  background-color: #fff5e1;
+  border-left: 8px solid #c89f70;
+  padding: 20px;
+}
+
+/* 자주묻는질문 CSS */
+.faq_title {
+  font-size: 48px;
+  text-align: center;
+  margin: 0 10px 10px;
+}
+.faq_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 28px;
+  margin: 20px 30px;
+  padding: 0;
+}
+.faq_item {
+  background-color: #fff5e1;
+  padding: 24px;
+  margin: 0 0px 10px;
+  border-left: 8px solid #d0a875;
+}
+.faq_q {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.faq_a {
+  font-size: 23px;
+  color: #333;
+  margin: 10px 20px;
+}
+
+/* 문의하기 CSS */
+  .contact_title {
+    font-size: 48px;
+    text-align: center;
+    margin: 0 10px 10px;
+  }
+  .contact_container {
+    font-size: 20px;
+    margin: 10px auto;
+    max-width: 600px;
+    color: #555;
+  }
+  .contact_form label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .contact_form input,
+  .contact_form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  .contact_form button {
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e0a96d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .contact_form button:hover {
+    background-color: #d08c50;
+  }
+
+/* 로그인 CSS */
+  .login_title {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px;
+  }
+  .login_container {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 600px;
+    color: #555;
+  }
+  .login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .login_form input {
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+  }
+  .login_form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ .login_form button:hover {
+    background-color: #1976D2;
+  }
+
+/* 회원가입 CSS */
+  body {
+    background-color: #f1e4d1;
+  }
+  .signup_title {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px;
+  }
+  .signup_container {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 600px;
+    color: #555;
+  }
+  .signup_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .signup_form input,
+  .signup_form select {
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    box-sizing: border-box;
+  }
+  .signup_form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .signup_form button:hover {
+    background-color: #1976D2;
+  }
+  .gender_group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 250px;
+  }
+  .gender_group label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s;
+  }
+  .gender_group label:hover {
+    background-color: #e3e2e2;
+  }
+  .gender_group input[type="radio"] {
+    accent-color: #2196F3;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+  }

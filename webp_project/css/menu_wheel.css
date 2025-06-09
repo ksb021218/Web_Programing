@@ -1,0 +1,42 @@
+  .wheel_content {
+    text-align: center;
+  }
+
+  .wheel_category {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .wheel_category label {
+    margin: 0 10px;
+  }
+
+  .wheel_box {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+  }
+
+  #wheel {
+    width: 100%;
+    height: 100%;
+    transition: transform 4s ease-out;
+    transform-origin: 50% 50%;
+  }
+
+  .wheel_button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    background-color: #ff944d;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .wheel_result {
+    margin: 20px;
+    font-size: 24px;
+    color: #333;
+  }

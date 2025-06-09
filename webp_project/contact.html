@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>문의하기</title>
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header data-include-path="./layout/header.html"></header>
+    <nav data-include-path="./layout/menu.html"></nav>
+
+    <!-- 본문 -->
+    <main class="main_content">
+      <div class="content_placeholder">
+        <div class="contact_title">📬 문의하기</div>
+        <div class="contact_container">
+          <form class="contact_form" id="contactForm">
+            <label>이름<br><input type="text" name="name" required></label>
+            <label>답변 받을 이메일<br><input type="email" name="email" required></label>
+            <label>메시지<br><textarea name="message" rows="5" required></textarea></label>
+            <button type="submit">보내기</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer data-include-path="./layout/footer.html"></footer>
+  </div>
+
+  <script type="module" src="js/include.js"></script>
+  <script type="module" src="js/index.js"></script>
+  <script>
+    // 문의하기 안내 함수
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("메시지가 제출되었습니다!");
+      window.location.href = './index.html';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>메뉴 제비뽑기</title>
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/menu_pick.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header data-include-path="./layout/header.html"></header>
+    <nav data-include-path="./layout/menu.html"></nav>
+
+    <main class="main_content">
+      <div class="pick_content">
+        <h1 class="pick_title">🎰 메뉴 제비뽑기</h1>
+
+        <details>
+          <summary>카테고리 선택하기</summary>
+          <div class="pick_category">
+            <label><input type="checkbox" value="한식" checked> 한식</label>
+            <label><input type="checkbox" value="중식" checked> 중식</label>
+            <label><input type="checkbox" value="일식" checked> 일식</label>
+            <label><input type="checkbox" value="양식" checked> 양식</label>
+            <label><input type="checkbox" value="동남아" checked> 동남아</label>
+            <label><input type="checkbox" value="인도" checked> 인도</label>
+            <label><input type="checkbox" value="분식" checked> 분식</label>
+            <label><input type="checkbox" value="패스트푸드" checked> 패스트푸드</label>
+            <label><input type="checkbox" value="카페/디저트"> 카페/디저트</label>
+            <label><input type="checkbox" value="술집/주점"> 술집/주점</label>
+          </div>
+        </details>
+        
+        <div class="pick_box">
+          <button class="pick_button" id="pick_button">제비 뽑기!</button>
+          <div class="pick_result" id="result"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer data-include-path="./layout/footer.html"></footer>
+  </div>
+  
+  <script type="module" src="js/include.js"></script>
+  <script type="module" src="js/index.js"></script>
+  <script type="module" src="js/menu_pick.js"></script>
+</body>
+</html>

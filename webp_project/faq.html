@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>자주묻는질문</title>
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header data-include-path="./layout/header.html"></header>
+    <nav data-include-path="./layout/menu.html"></nav>
+
+    <!-- 본문 -->
+    <main class="main_content">
+      <div class="content_placeholder">
+        <div class="faq_title">❓ 자주 묻는 질문</div>
+        <div class="faq_list">
+          <div class="faq_item">
+            <div class="faq_q">Q. 위치 권한을 허용해야 하나요?</div>
+            <blockquote class="faq_a">A. 네! 현재 위치 기반 추천을 위해 권한이 필요합니다.</blockquote>
+          </div>
+          <div class="faq_item">
+            <div class="faq_q">Q. 지도가 안 보일 때는 어떻게 하나요?</div>
+            <blockquote class="faq_a">
+              A. VSC에서 <strong>Live Server</strong> 확장 프로그램을 설치한 뒤, 파일에서 <mark>Open with Live Server</mark>로 실행해 주세요.<br>
+              A. 또한 브라우저의 위치 권한 허용 여부도 확인해 주세요.
+            </blockquote>
+          </div>
+        </div>
+      </div> 
+    </main>
+
+    <footer data-include-path="./layout/footer.html"></footer>
+  </div>
+
+  <script type="module" src="js/include.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>

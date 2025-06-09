@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>로그인</title>
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header data-include-path="./layout/header.html"></header>
+    <nav data-include-path="./layout/menu.html"></nav>
+
+    <!-- 본문 -->
+    <main class="main_content">
+      <div class="content_placeholder">
+        <div class="login_title">🔐 로그인</div>
+        <div class="login_container">
+          <form class="login_form" id="loginForm">
+            <input type="text" id="userId" placeholder="아이디를 입력하세요" required>
+            <input type="password" id="userPassword" placeholder="비밀번호를 입력하세요" required>
+            <button type="submit">로그인</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer data-include-path="./layout/footer.html"></footer>
+  </div>
+
+  <script type="module" src="js/include.js"></script>
+  <script type="module" src="js/index.js"></script>
+  <script>
+    // 로그인 안내 함수
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // 폼 제출 막기
+      alert('로그인 되었습니다.');
+      window.location.href = './index.html';
+    });
+  </script>
+</body>
+</html>

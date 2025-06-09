@@ -1,0 +1,156 @@
+/* 전체 바디 */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3e9dc;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 500;
+  min-width: 1280px;
+  overflow-x: auto;     /* 가로 스크롤 가능 */
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;       /* 가운데 정렬 */
+  border: solid 2px #c2a682;
+}
+
+/* 로고 영역 */
+.logo {
+    font-size: 64px;
+    text-align: center;
+    padding: 30px 0 10px 0;
+    background-color: #ede0c8;
+    color: #4b2e1e;
+    position: relative;
+}
+.logo_img {
+  height: 120px;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+/* 메뉴바 */
+/* nav_bar 영역별 색상 확인용
+.nav_bar_1 { background-color: rgba(255, 0, 0, 0.1); }
+.nav_bar_2 { background-color: rgba(255, 128, 0, 0.1); }
+.nav_bar_3 { background-color: rgba(255, 255, 0, 0.1); }
+.nav_bar_4 { background-color: rgba(0, 255, 0, 0.1); }
+.nav_bar_5 { background-color: rgba(0, 255, 255, 0.1); }
+.nav_bar_6 { background-color: rgba(0, 128, 255, 0.1); }
+.nav_bar_7 { background-color: rgba(0, 0, 255, 0.1); }
+.nav_bar_8 { background-color: rgba(128, 0, 255, 0.1); }
+.nav_bar_9 { background-color: rgba(255, 0, 255, 0.1); } */
+
+.nav_bar {
+  display: flex;
+  background-color: #d4b99a;
+  height: 50px;
+  z-index: 10;
+  padding: 0;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-top: 2px solid #c2a682;
+  border-bottom: 2px solid #c2a682;
+}
+
+.nav_bar > div {
+  flex: 0 0 11.11%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav_item {
+  position: relative;
+}
+
+.nav_link {
+  cursor: pointer;
+  color: #3e2b20;
+  font-size: 18px;
+}
+
+/* 서브메뉴 기본 숨김 */
+.nav_item {
+  position: relative;
+}
+
+.nav_subbar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%; /* 부모(nav_bar_X) 칸 너비에 맞춤 */
+  display: flex;
+  flex-direction: column;
+  background-color: #d4b99a;
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 100;
+  align-items: center;
+}
+
+/* 메뉴바 확장 및 축소 */
+.nav_item:hover .nav_subbar {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.nav_subbar a {
+  font-size: 18px;
+  padding: 6px 0;
+  white-space: nowrap;
+  color: #3e2b20;
+  text-decoration: none;
+}
+
+.nav_subbar a:hover {
+  text-decoration: underline;
+  color: #5c3a26;
+}
+
+/* 꼬리말 */
+.site_footer {
+    background-color: #d4b99a;
+    color: #3e2b20;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0px;
+    border-top: 2px solid #c2a682;
+}
+
+.site_footer .footer_content p {
+    margin: 5px 0;
+}
+
+/* 공통 링크 스타일 */
+a {
+  color: #3e2b20;
+  text-decoration: none;
+}
+
+/* 마우스를 올렸을 때만 색/밑줄 변경 */
+a:hover {
+  text-decoration: underline;
+  color: #5c3a26;
+}
+
+/* 방문한 링크도 hover 이전 상태처럼 보이게 */
+a:visited {
+  color: #3e2b20;
+  text-decoration: none;
+}
+
+/* 클릭 중일 때도 밑줄 안 생기게 */
+a:active {
+  text-decoration: none;
+}

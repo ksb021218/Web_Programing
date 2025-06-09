@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Map & Meal</title>
+  <!-- 공통 layout -->
+   <link rel="stylesheet" href="css/layout.css">
+  <!-- 지도 스타일시트 -->
+   <link rel="stylesheet" href="css/map_style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- 로고 -->
+    <header data-include-path="./layout/header.html"></header>
+
+    <!-- 메뉴바 -->
+    <nav data-include-path="./layout/menu.html"></nav>
+  
+    <!-- 본문 -->
+    <main class="main_content">
+
+      <!-- 지도 검색창 -->
+      <div class="search_bar">
+        <input type="text" id="search_input" placeholder="주소나 장소를 입력하세요">
+        <button id="search_button">검색</button>
+      </div>
+
+      <!-- 지도 나오는 부분 -->
+      <div class="map_container">
+        <div id="map"></div>
+      </div>
+      
+    </main>
+
+    <!-- 꼬리말 -->
+    <footer data-include-path="./layout/footer.html"></footer>
+  </div>
+
+  <script type="module" src="js/include.js"></script>
+  <script type="module" src="js/index.js"></script>
+  <!-- 지도 기능 스크립트 -->
+  <script type="module" src="js/map.js"></script>
+</body>
+</html>

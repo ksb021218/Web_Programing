@@ -1,0 +1,52 @@
+/* 검색창 */
+.search_bar {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#search_input,
+#search_button {
+  height: 42px;
+  font-size: 16px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border-radius: 6px;
+  margin-top: 3px;
+}
+
+#search_input {
+  width: 300px;
+  border: 1px solid #ccc;
+}
+
+#search_button {
+  background-color: #c2a682;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#search_button:hover {
+  background-color: #a87d5e;
+}
+
+/* 지도 감싸는 박스 */
+.map_container {
+  width: 900px;
+  height: 600px;
+  margin: 40px auto;
+  margin-top: -7px;
+  background-color: #fff9f0;
+  border: 3px solid #c7b198;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* 실제 지도 박스 */
+#map {
+  width: 100%;
+  height: 100%;
+  background-color: #eaeaea;
+}
